@@ -1,0 +1,10 @@
+C:\Users\marsy\Source\Repos\Ruleta\Ruleta\bin\Debug\Ruleta.exe.config
+C:\Users\marsy\Source\Repos\Ruleta\Ruleta\bin\Debug\Ruleta.exe
+C:\Users\marsy\Source\Repos\Ruleta\Ruleta\bin\Debug\Ruleta.pdb
+C:\Users\marsy\Source\Repos\Ruleta\Ruleta\obj\Debug\Ruleta.Form1.resources
+C:\Users\marsy\Source\Repos\Ruleta\Ruleta\obj\Debug\Ruleta.Properties.Resources.resources
+C:\Users\marsy\Source\Repos\Ruleta\Ruleta\obj\Debug\Ruleta.csproj.GenerateResource.cache
+C:\Users\marsy\Source\Repos\Ruleta\Ruleta\obj\Debug\Ruleta.csproj.CoreCompileInputs.cache
+C:\Users\marsy\Source\Repos\Ruleta\Ruleta\obj\Debug\Ruleta.exe
+C:\Users\marsy\Source\Repos\Ruleta\Ruleta\obj\Debug\Ruleta.pdb
+C:\Users\marsy\Source\Repos\Ruleta\Ruleta\obj\Debug\Ruleta.Information.resources
