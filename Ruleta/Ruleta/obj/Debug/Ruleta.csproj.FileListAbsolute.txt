@@ -8,3 +8,4 @@ C:\Users\marsy\Source\Repos\Ruleta\Ruleta\obj\Debug\Ruleta.csproj.CoreCompileInp
 C:\Users\marsy\Source\Repos\Ruleta\Ruleta\obj\Debug\Ruleta.exe
 C:\Users\marsy\Source\Repos\Ruleta\Ruleta\obj\Debug\Ruleta.pdb
 C:\Users\marsy\Source\Repos\Ruleta\Ruleta\obj\Debug\Ruleta.Information.resources
+C:\Users\marsy\Source\Repos\Ruleta\Ruleta\obj\Debug\Ruleta.csprojAssemblyReference.cache

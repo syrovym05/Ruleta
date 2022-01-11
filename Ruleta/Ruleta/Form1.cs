@@ -34,6 +34,8 @@ namespace Ruleta
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
+
             bool chyba = false;                    
             penize.Text = cash.ToString()+"$";
             int numerik;
@@ -47,23 +49,27 @@ namespace Ruleta
                     
                     VyhraC.Text = "";
                     numerik = Convert.ToInt32(textBox2.Text);
-                    if (numerik == cislo)
-                    {
-                        jackpot2.Text = "!!JACKPOT!!";
-                        cash += (Jack - 20);
-                    }
-                    else if (cislo - numerik >= -5 && cislo - numerik <= 5)
-                    {
-                        VyhraC.Text = "+200   Výhra na číslo";
-                        cash += 180;
-                    }
+                    if (numerik < 0) { MessageBox.Show("Chyba v zadávání", "Error 404", MessageBoxButtons.OK, MessageBoxIcon.Error); chyba = true; }
+
                     else
                     {
-                        VyhraC.Text = "-20$";
-                        cash -= 20;
+                        if (numerik == cislo)
+                        {
+                            jackpot2.Text = "!!JACKPOT!!";
+                            cash += (Jack - 20);
+                        }
+                        else if (cislo - numerik >= -5 && cislo - numerik <= 5)
+                        {
+                            VyhraC.Text = "+200   Výhra na číslo";
+                            cash += 180;
+                        }
+                        else if (nacitani == true)
+                        {
+                            VyhraC.Text = "-20$";
+                            cash -= 20;
+                        }
                     }
-
-
+                    
                 }
                 catch (Exception)
                 {
@@ -136,6 +142,33 @@ namespace Ruleta
 
                 penize.Text = cash.ToString() + "$";
                 if (cash <= 0) Close();
+
+                if (cash < 160)
+                {
+                    cerna.Visible = false;
+                    cervena.Visible = false;
+                    zelena.Visible = false;
+                    if (cash < 100)
+                    {
+                        Suda.Visible = false;
+                        Licha.Visible = false;
+                        if (cash < 20) textBox2.Visible = false;
+                        else textBox2.Visible = true;
+                    }
+                    else
+                    {
+                        Suda.Visible = true;
+                        Licha.Visible = true;
+                    }
+                }
+                else
+                {
+                    cerna.Visible = true;
+                    cervena.Visible = true;
+                    zelena.Visible = true;
+                }
+
+
             }
         }
 
@@ -190,11 +223,13 @@ namespace Ruleta
             {
                 nacitani = false;
                 checkBox1.ForeColor = Color.White;
+                textBox2.Visible = false;
             }
             else
             {
                 nacitani = true;
                 checkBox1.ForeColor = Color.Black;
+                textBox2.Visible = true;
             }
         }
     }

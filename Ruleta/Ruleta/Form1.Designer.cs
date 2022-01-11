@@ -87,7 +87,7 @@ namespace Ruleta
             this.textBox1.Cursor = System.Windows.Forms.Cursors.PanSW;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(343, 44);
+            this.textBox1.Location = new System.Drawing.Point(343, 30);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(126, 80);
@@ -450,7 +450,7 @@ namespace Ruleta
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(571, 225);
+            this.label12.Location = new System.Drawing.Point(572, 225);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(59, 18);
             this.label12.TabIndex = 31;
